@@ -1,0 +1,6 @@
+require "joachimkoch.options"
+require "joachimkoch.keymaps"
+require "joachimkoch.plugins"
+require "joachimkoch.colorscheme"
+require "joachimkoch.cmp"
+require "joachimkoch.lsp"
