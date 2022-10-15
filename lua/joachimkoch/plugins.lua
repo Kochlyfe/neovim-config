@@ -45,7 +45,10 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-
+  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+  use "numToStr/Comment.nvim" -- Easily comment stuff
+  use { "JoosepAlviste/nvim-ts-context-commentstring", commit = "4d3a68c41a53add8804f471fcc49bb398fe8de08" }
+  
   -- Colorschemes
   use 'folke/tokyonight.nvim' -- Tokyonight colorscheme
   
@@ -55,7 +58,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
-  use "hrsh7th/cmp-nvim-lsp"
+  use { "hrsh7th/cmp-nvim-lsp", commit = "affe808a5c56b71630f17aa7c38e15c59fd648a8" }
   use "hrsh7th/cmp-nvim-lua"
 
   -- snippets
@@ -77,6 +80,9 @@ return packer.startup(function(use)
   -- Treesitter
   use "nvim-treesitter/nvim-treesitter"
   -- use "p00f/nvim-ts-rainbow" -- if I at some point want rainbow parantheses
+
+  -- Git
+  use { "lewis6991/gitsigns.nvim", commit = "f98c85e7c3d65a51f45863a34feb4849c82f240f" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
