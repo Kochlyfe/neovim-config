@@ -3,5 +3,6 @@ if not status_ok then
 	return
 end
 
-require("joachimkoch.lsp.lsp-installer")
+require("joachimkoch.lsp.mason")
 require("joachimkoch.lsp.handlers").setup()
+require "joachimkoch.lsp.null-ls"
